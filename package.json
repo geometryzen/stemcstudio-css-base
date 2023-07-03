@@ -1,0 +1,27 @@
+{
+    "name": "stemcstudio-css-base",
+    "version": "0.0.0",
+    "description": "CSS for STEMCstudio applications",
+    "main": "./dist/base.min.css",
+    "scripts": {
+        "build": "npm run clean && mkdir ./dist && uglifycss ./src/base.css > ./dist/base.min.css && cp ./src/base.css ./dist/base.css",
+        "clean": "rm -rf ./dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geometryzen/stemcstudio-css-base.git"
+    },
+    "keywords": [
+        "css reset",
+        "modern css reset"
+    ],
+    "author": "David Geo Holmes <david.geo.holmes@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/geometryzen/stemcstudio-css-base/issues"
+    },
+    "homepage": "https://github.com/geometryzen/stemcstudio-css-base#readme",
+    "devDependencies": {
+        "uglifycss": "0.0.29"
+    }
+}
